@@ -25,7 +25,8 @@ public class lcs {
                     dp.get(i).set(j, previous + 1);
                 }
                 else {
-                    dp.get(i).set(j, 0);
+                    dp.get(i).set(j, 0); //Substring
+//                    dp.get(i).set(j, dp.get(i - 1).get(j)); //Subsequence
                 }
             }
         }
